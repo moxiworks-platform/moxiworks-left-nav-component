@@ -1,3 +1,1 @@
-import bar from './components/moxi-left-nav';
-
-bar();
+import './components/moxi-left-nav';
