@@ -81,7 +81,7 @@ export default function style() {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      width: 193px;
+      width: 100%;
       padding: 5.5px 5.5px 5.5px 30px;
       border-radius: 25px;
       border: 0;
