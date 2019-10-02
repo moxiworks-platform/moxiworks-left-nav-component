@@ -44,6 +44,16 @@ class MoxiLeftNav extends LitElement {
         border-radius: 25px;
         border: 0;
       }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        color: #fff;
+        padding: 6px 16px;
+        cursor: pointer;
+      }
     `
   }
 
@@ -60,6 +70,13 @@ class MoxiLeftNav extends LitElement {
         <div id="moxi-left-nav-search">
           <input name="moxi-search" placeholder="Search Anything">
         </div>
+        <ul>
+          <li>Dashboard</li>
+          <li>Calendar</li>
+          <li>People</li>
+          <li>Listings</li>
+          <li>presentation</li>
+        </ul>
       </div>
     `;
   }
