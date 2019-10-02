@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
+import CSS from './style';
 
 class MoxiLeftNav extends LitElement {
-  
   static get properties() {
     return { 
       message: { type: String },
@@ -9,55 +9,7 @@ class MoxiLeftNav extends LitElement {
   }
 
   static get styles() {
-    return css`
-      #moxi-left-navigation {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        font-family: 'Muli', sans-serif;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 225px;
-        background: #000;
-        padding: 0;
-        overflow-y: auto;
-        z-index: 1000;
-      }
-      #brokerage-logo {
-        
-        padding: 16px;
-      }
-      #brokerage-logo img {
-        display:block;
-        margin: auto;
-      }
-      #moxi-left-nav-search {
-        margin-bottom: 16px;
-        padding: 0 16px;
-      }
-      #moxi-left-nav-search input {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 193px;
-        padding: 5.5px;
-        border-radius: 25px;
-        border: 0;
-      }
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        color: #fff;
-        padding: 6px 16px;
-        cursor: pointer;
-        text-align: initial;
-      }
-    `
+    return CSS();
   }
 
   constructor() {
