@@ -7,6 +7,7 @@
  */
 
 import { css } from 'lit-element';
+
 export default function style() {
   return css`
     :host {
