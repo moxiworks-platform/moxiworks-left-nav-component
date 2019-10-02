@@ -45,15 +45,20 @@ export default function style() {
       top: 4px;
       left: 24px;
     }
+    #moxi-left-navigation-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
     #moxi-left-navigation {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       font-family: 'Muli', sans-serif;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
+      position: fixed;
+      min-height: 100vh;
+      max-height: 100vh;
       width: 225px;
       background: #000;
       padding: 0;
