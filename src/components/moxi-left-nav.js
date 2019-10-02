@@ -75,7 +75,10 @@ class MoxiLeftNav extends LitElement {
           <li>Calendar</li>
           <li>People</li>
           <li>Listings</li>
-          <li>presentation</li>
+          <li>Presentation</li>
+          <li>Website</li>
+          <li>Campaigns</li>
+          <li>Promote</li>
         </ul>
       </div>
     `;
