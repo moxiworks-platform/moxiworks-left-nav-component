@@ -1,6 +1,6 @@
 {
   "name": "@moxiworks/moxi-left-nav",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "build/moxi-left-nav.js",
   "scripts": {
