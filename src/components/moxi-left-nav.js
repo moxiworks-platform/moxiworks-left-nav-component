@@ -23,6 +23,7 @@ class MoxiLeftNav extends LitElement {
         background: #000;
         padding: 0;
         overflow-y: auto;
+        z-index: 1000;
       }
       #brokerage-logo {
         padding: 16px;
