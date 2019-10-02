@@ -135,7 +135,6 @@ const $=(t,e)=>`${t}--${e}`;let I=!0;void 0===window.ShadyCSS?I=!1:void 0===wind
  */
 (window.litElementVersions||(window.litElementVersions=[])).push("2.2.1");const lt=t=>t.flat?t.flat(1/0):function t(e,s=[]){for(let i=0,n=e.length;i<n;i++){const n=e[i];Array.isArray(n)?t(n,s):s.push(n)}return s}(t);class ct extends it{static finalize(){super.finalize.call(this),this._styles=this.hasOwnProperty(JSCompiler_renameProperty("styles",this))?this._getUniqueStyles():this._styles||[]}static _getUniqueStyles(){const t=this.styles,e=[];if(Array.isArray(t)){lt(t).reduceRight((t,e)=>(t.add(e),t),new Set).forEach(t=>e.unshift(t))}else t&&e.push(t);return e}initialize(){super.initialize(),this.renderRoot=this.createRenderRoot(),window.ShadowRoot&&this.renderRoot instanceof window.ShadowRoot&&this.adoptStyles()}createRenderRoot(){return this.attachShadow({mode:"open"})}adoptStyles(){const t=this.constructor._styles;0!==t.length&&(void 0===window.ShadyCSS||window.ShadyCSS.nativeShadow?nt?this.renderRoot.adoptedStyleSheets=t.map(t=>t.styleSheet):this._needsShimAdoptedStyleSheets=!0:window.ShadyCSS.ScopingShim.prepareAdoptedCssText(t.map(t=>t.cssText),this.localName))}connectedCallback(){super.connectedCallback(),this.hasUpdated&&void 0!==window.ShadyCSS&&window.ShadyCSS.styleElement(this)}update(t){super.update(t);const e=this.render();e instanceof S&&this.constructor.render(e,this.renderRoot,{scopeName:this.localName,eventContext:this}),this._needsShimAdoptedStyleSheets&&(this._needsShimAdoptedStyleSheets=!1,this.constructor._styles.forEach(t=>{const e=document.createElement("style");e.textContent=t.cssText,this.renderRoot.appendChild(e)}))}render(){}}ct.finalized=!0,ct.render=(t,e,s)=>{if(!s||"object"!=typeof s||!s.scopeName)throw new Error("The `scopeName` option is required.");const i=s.scopeName,n=R.has(e),r=I&&11===e.nodeType&&!!e.host,a=r&&!H.has(i),l=a?document.createDocumentFragment():e;if(((t,e,s)=>{let i=R.get(e);void 0===i&&(o(e,e.firstChild),R.set(e,i=new C(Object.assign({templateFactory:M},s))),i.appendInto(e)),i.setValue(t),i.commit()})(t,l,Object.assign({templateFactory:W(i)},s)),a){const t=R.get(l);R.delete(l);const s=t.value instanceof y?t.value.template:void 0;J(i,l,s),o(e,e.firstChild),e.appendChild(l),R.set(e,t)}!n&&r&&window.ShadyCSS.styleElement(e.host)};customElements.define("moxi-left-nav",class extends ct{static get properties(){return{message:{type:String}}}static get styles(){return at`
       #moxi-left-navigation {
-        all: initial;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -151,21 +150,18 @@ const $=(t,e)=>`${t}--${e}`;let I=!0;void 0===window.ShadyCSS?I=!1:void 0===wind
         z-index: 1000;
       }
       #brokerage-logo {
-        all: initial;
+        
         padding: 16px;
       }
       #brokerage-logo img {
-        all: initial;
         display:block;
         margin: auto;
       }
       #moxi-left-nav-search {
-        all: initial;
         margin-bottom: 16px;
         padding: 0 16px;
       }
       #moxi-left-nav-search input {
-        all: initial;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -175,16 +171,15 @@ const $=(t,e)=>`${t}--${e}`;let I=!0;void 0===window.ShadyCSS?I=!1:void 0===wind
         border: 0;
       }
       ul {
-        all: initial;
         list-style: none;
         margin: 0;
         padding: 0;
       }
       li {
-        all: initial;
         color: #fff;
         padding: 6px 16px;
         cursor: pointer;
+        text-align: initial;
       }
     `}constructor(){super()}render(){return j`
       <div id="moxi-left-navigation">
