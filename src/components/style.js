@@ -40,6 +40,11 @@ export default function style() {
       word-spacing: initial;
       word-wrap: initial;
     }
+    #magnifying-glass-svg {
+      position: absolute;
+      top: 4px;
+      left: 24px;
+    }
     #moxi-left-navigation {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -63,6 +68,7 @@ export default function style() {
       margin: auto;
     }
     #moxi-left-nav-search {
+      position: relative;
       margin-bottom: 16px;
       padding: 0 16px;
     }
@@ -71,7 +77,7 @@ export default function style() {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       width: 193px;
-      padding: 5.5px;
+      padding: 5.5px 5.5px 5.5px 30px;
       border-radius: 25px;
       border: 0;
     }
@@ -85,6 +91,17 @@ export default function style() {
       padding: 6px 16px;
       cursor: pointer;
       text-align: initial;
+    }
+    li.section-break {
+      height: 32px;
+      margin: 0;
+      padding: 0;
+    }
+    li.sub-title {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0 16px 0 16px;
     }
   `
 }
