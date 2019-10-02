@@ -1,3 +1,11 @@
+/*
+ * Under the :host psuedo selector you're going to notice a bunch of attributes set to 'initial'.
+ * This is because, per the shadow dom spec, any CSS attribute which has an initial value of 'inherit'
+ * will inherit its value from outside the shadow dom. Since this component needs to be completly
+ * self contained, we're overriding to 'initial' to avoid values leaking into the shadow dom
+ * from outside the component.
+ */
+
 import { css } from 'lit-element';
 export default function style() {
   return css`
