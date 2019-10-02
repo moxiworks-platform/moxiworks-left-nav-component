@@ -23,7 +23,7 @@ or if using yarn
 
 `import '@moxiworks/moxi-left-nav'`
 
-### Using the Component Stand Alone
+### Using the Component Standalone
 
 You'll want to source the following library from WebComponents.org:
 
@@ -36,3 +36,7 @@ Then source the component:
 ### You'll need the following tag in your DOM for the component to mount to:
 
 `<moxi-left-nav></moxi-left-nav>`
+
+## Demo
+
+[CodePen showing standalone implementation](https://codepen.io/iamjpg/full/oNvKQaE)
