@@ -3,9 +3,10 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { HotModuleReplacementPlugin } = require('webpack');
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'moxi-left-nav.js'
   },
   module: {
@@ -18,21 +19,5 @@ module.exports = {
         loader: "babel-loader"
       }
     ]
-  },
-  plugins: [
-    new HotModuleReplacementPlugin(),
-    new HTMLWebpackPlugin({
-      showErrors: true,
-      cache: true,
-      title: 'Moxi Left Nav Component',
-      favicon: path.resolve(__dirname, 'dist/favicon.ico'),
-      template: path.resolve(__dirname, 'dist/index.html')
-    })
-  ],
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: false,
-    port: 9000,
-    hot: true
-  },
+  }
 };
