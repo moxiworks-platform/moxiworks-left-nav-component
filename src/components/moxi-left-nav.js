@@ -11,7 +11,6 @@ class MoxiLeftNav extends LitElement {
   static get styles() {
     return css`
       #moxi-left-navigation {
-        all: initial;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -27,21 +26,18 @@ class MoxiLeftNav extends LitElement {
         z-index: 1000;
       }
       #brokerage-logo {
-        all: initial;
+        
         padding: 16px;
       }
       #brokerage-logo img {
-        all: initial;
         display:block;
         margin: auto;
       }
       #moxi-left-nav-search {
-        all: initial;
         margin-bottom: 16px;
         padding: 0 16px;
       }
       #moxi-left-nav-search input {
-        all: initial;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -51,16 +47,15 @@ class MoxiLeftNav extends LitElement {
         border: 0;
       }
       ul {
-        all: initial;
         list-style: none;
         margin: 0;
         padding: 0;
       }
       li {
-        all: initial;
         color: #fff;
         padding: 6px 16px;
         cursor: pointer;
+        text-align: initial;
       }
     `
   }
