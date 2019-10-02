@@ -8,22 +8,39 @@ class MoxiLeftNav extends LitElement {
 
   static get styles() {
     return css`
-      div,p,ul,li {
-        font-family: Helvetica, Verdana, Arial, sans-serif;
+      #moxi-left-navigation {
+        font-family: 'Muli', sans-serif;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 225px;
+        background: #000;
+      }
+      #brokerage-logo {
+        padding: 16px;
+      }
+      #brokerage-logo img {
+        display:block;
+        margin: auto;
       }
     `
   }
 
   constructor() {
     super();
-    this.message='Hello world! From my-element';
   }
 
   render() {
     return html`
-      <p>${this.message}</p>
+      <div id="moxi-left-navigation">
+        <div id="brokerage-logo">
+          <img src="https://www.windermere.com/assets/shared/WRE_logo_white-268x100-18c23149838895d8ecfa41867b9bb393.png" width="150" />
+        </div>
+      </div>
     `;
   }
 
 }
+
 customElements.define('moxi-left-nav', MoxiLeftNav);
