@@ -19,7 +19,6 @@ class MoxiLeftNav extends LitElement {
   render() {
 
     return html`
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <div id="moxi-left-navigation-wrapper">
         <div id="moxi-left-navigation">
           <div id="brokerage-logo">
